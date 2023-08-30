@@ -1,0 +1,84 @@
+:root {
+    --babyblue: #C2C7FB;
+    --headpurple: #FB44D8;
+    --backpurple: #B76CFB;
+    --borderblue: #AFE8F5;
+    --textpurple: #DE85F5;
+}
+
+* {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 1%;
+    background-image: linear-gradient(var(--backpurple), var(--babyblue), var(--backpurple));
+    border-bottom: 21px solid var(--borderblue);
+}
+
+#header {
+    display: flex;
+    position: relative;
+}
+
+header h1 {
+    position: relative;
+    font-size: 300%;
+    color:var(--headpurple);
+    padding-left: 6%;
+    width:auto;
+
+}
+
+header h4 {
+    position: absolute;
+    font-size: 160%;
+    color: var(--textpurple);
+    margin-top: 50px;
+    margin-left: 8%;
+}
+
+.NavBar {
+    display: flex;
+    font-size: 215%;
+    text-align: right;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: var(--textpurple);
+    
+}
+
+#zaba {
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+body {
+    background-color: var(--babyblue);
+}
+
+div {
+    display: flex;
+}
+
+.left {
+    border-top: 21px solid var(--borderblue);
+    padding: 10%;
+}
+
+.right {
+    align-content: center;
+    border-top: 21px solid var(--borderblue);
+    padding: 10%;
+    max-width: 50%;
+    min-width: 50%;
+}
+

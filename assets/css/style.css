@@ -14,7 +14,8 @@
 header {
     position: relative;
     width: 100%;
-    padding: 1%;
+    padding: 0%;
+    margin: 0;
     background-image: linear-gradient(var(--backpurple), var(--babyblue), var(--backpurple));
     border-bottom: 21px solid var(--borderblue);
 }
@@ -30,55 +31,127 @@ header h1 {
     color:var(--headpurple);
     padding-left: 6%;
     width:auto;
-
 }
 
 header h4 {
-    position: absolute;
+    position: relative;
     font-size: 160%;
     color: var(--textpurple);
     margin-top: 50px;
-    margin-left: 8%;
+    margin-left: -4%;
+    top: -10px;
 }
 
 .NavBar {
     display: flex;
-    font-size: 215%;
+    position: absolute;
+    font-size: 150%;
     text-align: right;
-    margin-left: 60%;
-    margin-top: 2%;
+    right: 10%;
+    top: 25%
 }
 
 .NavBar a {
     text-decoration: none;
-    color: var(--textpurple);
-    
+    color: var(--textpurple); 
 }
 
 #zaba {
     display: block;
     width: 100%;
     height: 20%;
+    border-bottom: 21px solid var(--borderblue);
 }
 
 body {
     background-color: var(--babyblue);
 }
 
-div {
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+article {
+    text-align: center;
+    padding-top: 5%;
+}
+
+article h2 {
+    color: var(--headpurple);
+    font-size: 250%;
+    padding: 10px;
+}
+
+article p {
+    color:var(--textpurple);
+    font-size: 210%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#Work img {
+    border: 12px solid #48F0F1;
+}
+
+#Work p {
+    position: relative;
+    background-color: #48F0F1;
+    bottom: 12%;
+}
+
+.ImgTrio {
     display: flex;
 }
 
-.left {
-    border-top: 21px solid var(--borderblue);
-    padding: 10%;
+.ImgTrio img {
+    flex: 1;
+    width: 60%;
+    height: 90%;
+  }
+
+#Contact {
+    padding: 20%;
 }
 
-.right {
-    align-content: center;
-    border-top: 21px solid var(--borderblue);
-    padding: 10%;
-    max-width: 50%;
-    min-width: 50%;
+#Contact a {
+    font-size: 140%;
+    text-decoration: none;
+    color: var(--textpurple); 
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        width: 110%;
+    }
+    header h1 {
+        font-size: 210%;
+    }
+    header h4 {
+        font-size: 110%;
+    }
+    .NavBar {
+        font-size: 110%;
+    }
+    #zaba {
+        width: 110%;
+        height: 20%;
+        border-bottom: 21px solid var(--borderblue);
+    }
+    article p {
+        font-size: 115%;
+    }
+
+
+    #ImgOne img {
+        width: 60%;
+        height: 60%;
+      }
+    .ImgTrio img {
+        flex: 1;
+        width: 60%;
+        height: 60%;
+      }
+  }
